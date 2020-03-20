@@ -1,0 +1,1645 @@
+@charset "utf-8";
+@import url(reset.css);
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700,900&display=swap");
+
+body {
+  background-color: #000;
+  color: #fec30d;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+h2 {
+  font-size: 95.28px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.header {
+  border-bottom: 2px solid #fec30d;
+  background: black;
+  z-index: 9999;
+  position: relative;
+}
+
+.header .menuOpen {
+  display: none;
+}
+
+.header>h1 {
+  width: 196px;
+}
+
+.header>ul.nav {
+  position: absolute;
+  bottom: 10px;
+  right: 0;
+}
+
+.header>.nav>li {
+  display: inline-block;
+  margin-left: 32px;
+  font-size: 20px;
+  position: relative;
+}
+
+.header>.nav>li:first-child>a:hover::after {
+  content: "나에 대해서";
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  width: 150%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: black;
+}
+
+.header>.nav>li:nth-child(2)>a:hover::after {
+  content: "포트폴리오";
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  width: 150%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: black;
+}
+
+.header>.nav>li:nth-child(3)>a:hover::after {
+  content: "스킬";
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  width: 150%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: black;
+}
+
+.header>.nav>li:last-child>a:hover::after {
+  content: "연락하세요!";
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  width: 150%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: black;
+}
+
+.section #intro {
+  position: relative;
+}
+
+.section #intro .intro1 {
+  font-size: 216.59px;
+  font-weight: 900;
+  background-image: url(../img/Layer-2-copy.gif);
+  background-repeat: no-repeat;
+  background-position-x: 75%;
+  background-position-y: 30%;
+  padding-left: 6%;
+}
+
+.section #intro .intro1>p {
+  margin-bottom: -0.675em;
+  opacity: 0;
+}
+
+.section #intro .intro1>p:first-child {
+  animation: hello 0.5s ease 1s forwards;
+}
+
+.section #intro .intro1>p:nth-child(2) {
+  animation: there 0.5s ease 1.2s forwards;
+}
+
+.section #intro .intro1>p:nth-child(3) {
+  animation: guess 0.5s ease 1.4s forwards;
+}
+
+.section #intro .intro1>p:last-child {
+  animation: WAI 0.5s ease 1.6s forwards;
+  margin-bottom: 120px;
+}
+
+@keyframes hello {
+  0% {
+    transform: translate(-50px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translate(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes there {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes guess {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes WAI {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+.section .intro2 {
+  display: inline-block;
+  animation: scroll 0.5s ease alternate infinite;
+  position: absolute;
+  bottom: 0;
+  left: 0px;
+  cursor: pointer;
+}
+
+.section #intro .intro2 p {
+  display: inline;
+  padding-bottom: 50px;
+  font-weight: 300;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateY(0px);
+  }
+
+  100% {
+    transform: translateY(8px);
+  }
+}
+
+.section #aboutMe {
+  padding-top: 20px;
+  position: relative;
+  background: url(../img/wave.png) no-repeat 0px bottom;
+  background-size: auto;
+  padding-bottom: 300px;
+}
+
+.section #aboutMe .introduce {
+  width: 100%;
+}
+
+.section #aboutMe .introduce>img {
+  width: 40%;
+}
+
+.section #aboutMe .introduce .aligner {
+  width: 52.91666%;
+  float: right;
+  margin: 270px 0px 120px;
+  position: relative;
+}
+
+.section .moon {
+  position: absolute;
+  top: 40px;
+  left: -20px;
+  width: 9% !important;
+}
+
+.section #aboutMe h2 {
+  font-size: 52.26px;
+}
+
+.section #aboutMe h2>em {
+  font-size: 2em;
+}
+
+.section #aboutMe p {
+  font-size: 23px;
+  font-weight: 100;
+  text-align: justify;
+}
+
+.section #aboutMe p strong {
+  font-size: 31px;
+}
+
+.section #aboutMe .la>h3 {
+  font-size: 51.46px;
+  text-align: center;
+}
+
+.section #aboutMe .la {
+  font-size: 40px;
+  font-weight: 300;
+}
+
+.section #aboutMe .la .lisenses {
+  margin-bottom: 30px;
+}
+
+.section #aboutMe .la .lisenses .memoList>li {
+  background-image: url(../img/memo.png);
+  background-size: 250px;
+  background-repeat: space;
+  background-position: center;
+  width: 25%;
+  float: left;
+  padding: 50px 0;
+}
+
+.section #aboutMe .la .lisenses .memoList>li>ul {
+  margin: 0px 0px 10px 57px;
+}
+
+.section #aboutMe .la .awards {
+  font-size: 30px;
+  padding: 0 27px;
+}
+
+.section #aboutMe .la .awards .postList>li {
+  height: 90px;
+  line-height: 82px;
+  border: 1.5px solid #fec30d;
+  border-right-width: 1px;
+  position: relative;
+  margin-bottom: 20px;
+  width: 48.5%;
+}
+
+.section #aboutMe .la .awards .postList>li:first-child {
+  line-height: 40px;
+}
+
+.section #aboutMe .la .awards .postList>li:nth-child(odd) {
+  float: left;
+}
+
+.section #aboutMe .la .awards .postList>li:nth-child(even) {
+  float: right;
+}
+
+.section #aboutMe .la .awards .postList>li>.lineBox {
+  width: 90%;
+  border: 0.5px solid #fec30d;
+  border-top: none;
+  border-radius: 0 0 30px 0;
+  height: 88px;
+  position: absolute;
+  top: 0px;
+  right: 0%;
+  padding-left: 10px;
+}
+
+.section #aboutme .wave {
+  position: absolute;
+  width: 100%;
+  height: 358px;
+  bottom: 0;
+  left: 0px;
+}
+
+.section #portfolio {
+  background: #fec30d;
+  color: black;
+  padding-bottom: 135px;
+}
+
+.section #portfolio h2 {
+  position: relative;
+}
+
+.section #portfolio h2::after {
+  content: "";
+  width: 37px;
+  height: 3px;
+  background: #000000;
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.section #portfolio .portList {
+  font-size: 28px;
+  text-align: center;
+  position: relative;
+  width: 618px;
+  margin: 20px auto 48px;
+  border-bottom: 3px solid #000000;
+  padding-bottom: 16px;
+}
+
+.section #portfolio .portList>li {
+  display: inline-block;
+  margin: 0px 11px;
+  position: relative;
+}
+
+.section #portfolio .portList>li:nth-child(2)>a:hover::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #fec30d;
+  background-image: url(../img/icon-01.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0px;
+}
+
+.section #portfolio .portList>li:nth-child(3)>a:hover::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #fec30d;
+  background-image: url(../img/icon-02.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0px;
+}
+
+.section #portfolio .portList>li:nth-child(4)>a:hover::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #fec30d;
+  background-image: url(../img/icon-03.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0px;
+}
+
+.section #portfolio .portList>li:nth-child(5)>a:hover::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #fec30d;
+  background-image: url(../img/icon-04.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0px;
+}
+
+.section #portfolio .grid>div.grid-sizer {
+  width: 24.5%;
+  margin: 0 0.25%;
+}
+
+.section #portfolio .grid>div.grid-item {
+  float: left;
+  width: 24.5%;
+  margin: 0px 0.25% 10px;
+  color: #fec30d;
+  font-size: 23.9px;
+  text-align: center;
+  position: relative;
+  background: black;
+}
+
+
+.section #portfolio .black img:hover {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+.section #portfolio .grid>div>.black {
+  margin: 15px;
+  overflow: hidden;
+}
+
+.section #portfolio .grid>div p {
+  padding: 12px 0;
+}
+
+.section #portfolio .grid>div img {
+  opacity: 0.7;
+  transition: all 0.4s;
+}
+
+.section #portfolio .txt {
+  display: none;
+  /* transition: all 0.3s 1s; */
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  z-index: 99999;
+  position: fixed;
+  text-align: left;
+  width: 30%;
+}
+.section #portfolio .txt>.color, .color2 {
+  margin-top: 20px;
+}
+.section #portfolio .txt>.color ul>li, .color2 ul>li {
+  float: left;
+  width: 18%;
+  margin: 0 1%;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  color: #000;
+}
+
+.section #portfolio .txt>.color ul>li:first-child {
+  background: #d92b97;
+}
+
+.section #portfolio .txt>.color ul>li:nth-child(2) {
+  background: #22031b;
+  color: #fec30d;
+}
+
+.section #portfolio .txt>.color ul>li:nth-child(3) {
+  background: #fbcb48;
+}
+
+.section #portfolio .txt>.color ul>li:nth-child(4) {
+  background: #310629;
+  color: #fec30d;
+}
+
+.section #portfolio .txt>.color2 ul>li:first-child {
+  background: #000;
+  color: #fec30d;
+}
+
+.section #portfolio .txt>.color2 ul>li:nth-child(2) {
+  background: #ffff66;
+}
+
+.section #portfolio .txt>.color2 ul>li:nth-child(3) {
+  background: #fc6e22
+}
+
+.section #portfolio .txt>.color2 ul>li:nth-child(4) {
+  background: #ff1494;
+}
+
+.section #portfolio .txt>.color2 ul>li:last-child {
+  background:#c24cf6;
+
+}
+.section #portfolio .txt>strong {
+  font-size: 1.5em;
+}
+
+.section #portfolio .grid-item:first-child .prize {
+  font-size: 0.8125em;
+}
+
+.section #skills {
+  color: #fec30d;
+  background: #fec30d;
+  background-image: url(../img/wave2.png);
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+  background-size: contain;
+  padding: 137px 0px 319px;
+  font-size: 41.61px;
+  overflow: hidden;
+}
+
+.section #skills>h2 {
+  color: #000000;
+}
+
+.section #skills .skills {
+  background-image: url(../img/Hue_Saturation-1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: relative;
+}
+
+.section #skills .skills ul {
+  padding: 4.5% 0 6%;
+}
+
+.section #skills .skills ul li {
+  width: 48%;
+  float: left;
+}
+
+.section #skills .skills ul li:nth-child(even) {
+  float: right;
+}
+
+.section #skills .skills .battery {
+  border: solid 3px #fec30d;
+  position: relative;
+}
+
+.section #skills .skills .battery::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -3%;
+  border: 2.5px solid #fec30d;
+  height: 53.57142%;
+  width: 1.77304%;
+}
+
+.section #skills .skills .energy {
+  margin: 0.7%;
+  background: #fec30d;
+}
+
+.section #skills .skills span {
+  font-size: 31.64px;
+  color: #000000;
+  padding: 0px 0px 3px 3px;
+  display: block;
+}
+
+.section #skills .skills li:nth-child(1) .energy {
+  width: 92%;
+  animation: ill 0.8s ease-out normal;
+}
+
+@keyframes ill {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 92%;
+  }
+}
+
+.section #skills .skills li:nth-child(2) .energy {
+  width: 84%;
+  animation: pho 0.8s ease-out normal;
+}
+
+@keyframes pho {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 84%;
+  }
+}
+
+.section #skills .skills li:nth-child(3) .energy {
+  width: 85%;
+  animation: html 0.8s ease-out normal;
+}
+
+@keyframes html {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 85%;
+  }
+}
+
+.section #skills .skills li:nth-child(4) .energy {
+  width: 76%;
+  animation: css 0.8s ease-out normal;
+}
+
+@keyframes css {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 76%;
+  }
+}
+
+.section #skills .skills li:nth-child(5) .energy {
+  width: 87%;
+  animation: ind 0.8s ease-out normal;
+}
+
+@keyframes ind {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 87%;
+  }
+}
+
+.section #skills .skills li:nth-child(6) .energy {
+  width: 73%;
+  animation: ae 0.8s ease-out normal;
+}
+
+@keyframes ae {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 73%;
+  }
+}
+
+.section #contactMe {
+  padding: 0px 0px 300px;
+}
+
+.section #contactMe h2 {
+  margin-bottom: 112px;
+}
+
+.section #contactMe input[type="text"] {
+  border: none;
+  border-bottom: solid 1px #fec30d;
+  background: none;
+  display: block;
+  margin-bottom: 54px;
+  width: 40.91666%;
+  height: 45px;
+  color: #fec30d;
+  font-family: "Noto Sans KR", sans-serif;
+  padding: 5px;
+}
+
+.section #contactMe fieldset {
+  position: relative;
+  width: 100%;
+}
+
+.section #contactMe p {
+  font-size: 34.71px;
+  font-weight: 100;
+}
+
+.section #contactMe p:last-child {
+  position: absolute;
+  top: 0;
+  right: 0%;
+
+  width: 40.91666%;
+}
+
+.section #contactMe textarea {
+  background: none;
+  border: none;
+  border: solid 2px #fec30d;
+  height: 569px;
+  width: 100%;
+  display: block;
+  color: #fec30d;
+  font-size: 20px;
+  font-family: "Noto Sans KR", sans-serif;
+  padding: 20px;
+}
+
+.section #contactMe .btn {
+  margin-top: 110px;
+}
+
+.section #contactMe input[type="submit"] {
+  background: none;
+  border: 1px solid #fec30d;
+  color: #fec30d;
+  font-size: 20px;
+  padding: 20px;
+}
+
+.footer {
+  border-top: 1px solid #fec30d;
+  padding: 50px 0px 50px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 100;
+}
+
+.footer strong {
+  font-weight: 400;
+}
+
+.footer .up {
+  position: fixed;
+  z-index: 999;
+  bottom: 20px;
+  right: 20px;
+  display: inline-block;
+  opacity: 1;
+}
+
+.footer .up img {
+  width: 30px;
+  animation: up 0.5s alternate infinite;
+}
+
+@keyframes up {
+  0% {
+    transform: translateY(10px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.pageLoad {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 100000;
+  overflow: hidden;
+}
+
+.pageLoad .pBlack {
+  background-color: #000;
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes line {
+  0% {
+    width: 8%;
+    transform: translate(-50%, -50%);
+  }
+
+  36% {
+    width: 80%;
+    transform: translate(-50%, -50%);
+  }
+
+  64% {
+    width: 80%;
+    transform: translate(-50%, -50%) rotateX(0deg);
+  }
+
+  100% {
+    width: 80%;
+    transform: translate(-50%, -50%) rotate(-90deg);
+  }
+}
+
+.pageLoad>.rDoor {
+  position: fixed;
+  background-color: #000;
+  border-left: 2px solid #fec30d;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 50%;
+  /* opacity: 0; */
+  display: none;
+  /* animation: rDoor 1.3s ease forwards; */
+}
+
+@keyframes rDoor {
+  0% {
+    opacity: 0;
+    left: 50%;
+  }
+
+  54.9% {
+    opacity: 1;
+    left: 50%;
+  }
+
+  55% {
+    opacity: 1;
+    left: 50%;
+  }
+
+  60% {
+    left: 50%;
+  }
+
+  100% {
+    left: 100%;
+  }
+}
+
+.pageLoad>.lDoor {
+  position: fixed;
+  background-color: #000;
+  border-right: 2px solid #fec30d;
+  top: 0;
+  bottom: 0;
+  right: 50%;
+  left: 0;
+  /* opacity: 0; */
+  display: none;
+  /* animation: lDoor 1.3s ease forwards; */
+}
+
+.pageLoad>.line {
+  width: 8%;
+  height: 4px;
+  background-color: #fec30d;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999999999;
+  /* animation: line 0.83s ease forwards; */
+}
+
+.outer {
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.8);
+  opacity: 0;
+  z-index: 10000;
+}
+
+/* .modal {
+  position: fixed;
+  width: 30%;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+} */
+
+@keyframes lDoor {
+  0% {
+    opacity: 0;
+    right: 50%;
+  }
+
+  54.9% {
+    opacity: 1;
+    right: 50%;
+  }
+
+  55% {
+    opacity: 1;
+    right: 50%;
+  }
+
+  60% {
+    right: 50%;
+  }
+
+  100% {
+    right: 100%;
+  }
+}
+
+.outButton {
+  position: fixed;
+  background: none;
+  width: 45px;
+  border: none;
+  top: 15%;
+  right: 15%;
+  transform: translate(-50%, 50%);
+  text-indent: -9999px;
+}
+
+.outButton span {
+  height: 5px;
+  width: 100%;
+  background-color: #fec30d;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.3s;
+}
+
+
+/* .pointer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+  width: 70px;
+  height: 70px;
+  border: 2px solid #000;
+  border-radius: 50%;
+  transition: all ease-out 0.4s;
+} */
+
+@media screen and (max-width: 1280px) {
+  .section #aboutMe h2 {
+    font-size: 4vw;
+  }
+
+  .section #aboutMe .introduce .aligner {
+    margin-top: 20%;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .inner {
+    padding: 0 30px;
+  }
+
+  .header .nav {
+    padding-right: 30px;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .section #intro .intro1 {
+    font-size: 17vw;
+    font-weight: 900;
+    background-image: url(../img/Layer-2-copy.gif);
+    background-repeat: no-repeat;
+    background-position: 85% center;
+    padding-left: 6%;
+  }
+
+  .section #intro .intro1>p {
+    opacity: 0;
+  }
+
+  .section #intro .intro1>p:last-child {
+    margin-bottom: 120px;
+  }
+}
+
+@media screen and (max-width: 1088px) {
+  .section #aboutMe .la .lisenses .memoList>li {
+    background-image: url(../img/memo.png);
+    background-size: 250px;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 50%;
+    float: left;
+    padding: 50px 0;
+  }
+
+  .section #aboutMe .la .lisenses .memoList>li>ul {
+    margin: 0px 0px 10px 35%;
+  }
+
+  .section #aboutMe .la .awards {
+    font-size: 30px;
+    padding: 0 27px;
+  }
+
+  .section #aboutMe .la .awards .postList>li {
+    height: 90px;
+    line-height: 82px;
+    border: 1.5px solid #fec30d;
+    border-right-width: 1px;
+    position: relative;
+    margin-bottom: 20px;
+    width: 48.5%;
+  }
+
+  .section #aboutMe .la .awards .postList>li:first-child {
+    font-size: 25px;
+    line-height: 40px;
+  }
+
+  .section #aboutMe .la .awards .postList>li:nth-child(odd) {
+    float: left;
+  }
+
+  .section #aboutMe .la .awards .postList>li:nth-child(even) {
+    float: right;
+  }
+
+  .section #aboutMe .la .awards .postList>li>.lineBox {
+    width: 90%;
+    border: 0.5px solid #fec30d;
+    border-top: none;
+    border-radius: 0 0 30px 0;
+    height: 88px;
+    position: absolute;
+    top: 0px;
+    right: 0%;
+    padding-left: 10px;
+  }
+}
+
+@media screen and (max-width: 1028px) {
+  .header {
+    border-bottom: 2px solid #fec30d;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  .header>h1 {
+    width: 196px;
+  }
+
+  .header .nav {
+    display: block;
+    padding-right: 0px;
+  }
+
+  .header .menuOpen {
+    display: block;
+    position: fixed;
+    top: 2%;
+    right: 5.5%;
+    transform: translateY(0%);
+    width: 35px;
+    height: 42px;
+    background: none;
+    border: none;
+    z-index: 10000;
+    transition: all 0.3s;
+  }
+
+  .header .menuOpen.on {
+    display: block;
+    position: fixed;
+    top: 2%;
+    right: 5.5%;
+    transform: translateY(0%);
+    width: 40px;
+    height: 48px;
+    background: none;
+    border: none;
+    z-index: 10000;
+  }
+
+  .header .menuOpen span {
+    width: 100%;
+    height: 3px;
+    background: #fec30d;
+    border: 1px solid black;
+    box-sizing: content-box;
+    display: block;
+    transform: translateY(-50%);
+    margin: 12px 0px;
+    transition: all 0.3s;
+  }
+
+  .header .menuOpen span:nth-of-type(1).on {
+    width: 100%;
+    height: 3px;
+    background: #000;
+    display: block;
+    transform: translateY(0%) rotate(45deg);
+    margin: 0px 0px;
+    position: absolute;
+    top: 20px;
+    left: 0px;
+  }
+
+  .header .menuOpen span:nth-of-type(3).on {
+    width: 100%;
+    height: 3px;
+    background: #000;
+    display: block;
+    transform: translateY(0%) rotate(-45deg);
+    margin: 0px 0px;
+    position: absolute;
+    top: 20px;
+    left: 0px;
+  }
+
+  .header .menuOpen span:nth-of-type(2).on {
+    position: absolute;
+    display: none;
+    background: #000;
+  }
+
+  .header>ul.nav {
+    display: none;
+    position: fixed;
+    bottom: 0px;
+    right: -100%;
+    width: 35%;
+    height: 100%;
+    background: #fec30d;
+    z-index: 9999;
+  }
+
+  .header>ul.navOn {
+    display: block;
+    position: fixed;
+    bottom: 0px;
+    right: 0%;
+    width: 35%;
+    height: 100%;
+    background: #fec30d;
+    z-index: 9999;
+  }
+
+  .header>.nav>li {
+    display: block;
+    text-align: center;
+    padding-top: 20px;
+    margin-left: 32px;
+    font-size: 30px;
+    color: #000000;
+    position: relative;
+  }
+
+  .header>.nav>li:first-child {
+    margin-top: 70px;
+  }
+
+  .header>.nav>li:first-child>a:hover::after {
+    display: none;
+  }
+
+  .header>.nav>li:nth-child(2)>a:hover::after {
+    display: none;
+  }
+
+  .header>.nav>li:nth-child(3)>a:hover::after {
+    display: none;
+  }
+
+  .header>.nav>li:last-child>a:hover::after {
+    display: none;
+  }
+
+  .section #intro .intro1 {
+    background-size: 40%;
+  }
+
+  .section #intro .intro1>p:last-child {
+    margin-bottom: 91px;
+  }
+
+  .section #aboutMe .la .awards {
+    font-size: 25px;
+    padding: 0 27px;
+  }
+
+  .section #aboutMe .la .awards .postList>li {
+    height: 90px;
+    line-height: 82px;
+    border: 1.5px solid #fec30d;
+    border-right-width: 1px;
+    position: relative;
+    margin-bottom: 20px;
+    width: 48.5%;
+  }
+}
+
+@media screen and (max-width: 930px) {
+  .section #aboutMe .la .awards .postList>li:first-child {
+    font-size: 22.5px;
+  }
+}
+
+@media screen and (max-width: 915px) {
+  .header {
+    position: relative;
+  }
+
+  .header h1 {
+    margin-left: 15px;
+    margin-bottom: 6px;
+  }
+
+  .header .nav {
+    display: none;
+  }
+
+  .section #intro .intro1 {
+    font-weight: 900;
+    background-image: url(../img/Layer-2-copy.gif);
+    background-repeat: no-repeat;
+    background-position: 95% center;
+    padding-left: 6%;
+    padding-top: 5%;
+  }
+
+  .section #intro .intro1>p {
+    margin-bottom: -0.55em;
+  }
+
+  .section #intro .intro1>p:last-child {
+    margin-bottom: 0.625em;
+  }
+
+  .section .intro2 {
+    display: none;
+  }
+
+  .section #aboutMe {
+    position: relative;
+  }
+
+  .section #aboutMe .introduce {
+    width: 100%;
+  }
+
+  .section #aboutMe .introduce>img {
+    width: 40%;
+    animation: me ease 1s;
+  }
+
+  @keyframes me {
+    0% {
+      transform: translateY(30px);
+      opacity: 0;
+    }
+
+    100% {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+  }
+
+  .section .moon {
+    top: 5%;
+    left: -2%;
+  }
+
+  .section #aboutMe h2 {
+    font-size: 5vw;
+  }
+
+  .section #aboutMe h2>em {
+    font-size: 1.4em;
+  }
+
+  .section #aboutMe p {
+    font-size: 2.2vw;
+  }
+
+  .section #aboutMe p strong {
+    font-size: 3.4vw;
+  }
+
+  .section #aboutMe .la {
+    font-size: 35px;
+    font-weight: 300;
+  }
+
+  .section #aboutMe .la .lisenses {
+    margin: 20px 0px 30px;
+  }
+
+  .section #aboutMe .la .lisenses .memoList>li {
+    width: 50%;
+    padding: 50px 0;
+  }
+
+  .section #aboutMe .la .lisenses .memoList>li>ul {
+    margin: 0px 0px 3% 30%;
+  }
+
+  .section #aboutMe .la .awards {
+    font-size: 3.5vw;
+  }
+
+  .section #aboutMe .la .awards .postList>li {
+    width: 100%;
+  }
+
+  .section #portfolio .portList {
+    font-size: 30.14px;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    margin: 20px auto 48px;
+    border-bottom: 3px solid #000000;
+    padding-bottom: 16px;
+  }
+
+  .section #portfolio .portList>li {
+    display: inline-block;
+    margin: 0px 1%;
+    position: relative;
+  }
+
+  .section #portfolio .black {
+    margin: 15px;
+    overflow: hidden;
+  }
+
+  .section #skills .skills {
+    background-image: url(../img/Curves-1.png);
+    background-size: cover;
+  }
+
+  .section #skills .skills ul li {
+    width: 100%;
+    padding: 0% 4.77304% 0% 3%;
+  }
+
+  .section #skills .skills .battery::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -2.5%;
+    border: 2.5px solid #fec30d;
+    height: 53.57142%;
+    width: 1.77304%;
+  }
+
+  .section #contactMe {
+    padding-bottom: 10%;
+  }
+
+  .section #contactMe p:last-child {
+    position: static;
+    top: 0;
+    right: 0%;
+    width: 100%;
+  }
+
+  .section #contactMe input[type="text"] {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+  }
+
+  .section #contactMe textarea {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .section #contactMe label {
+    padding-left: 10%;
+  }
+
+  .section #contactMe .btn {
+    margin-top: 110px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 764px) {
+  .section #intro .intro1 {
+    font-size: 17.5vw;
+  }
+
+  .section #skills .skills .battery::after {
+    right: -2.7%;
+  }
+
+  .section #portfolio .grid>div.grid-sizer {
+    width: 32%;
+    margin: 0 0.666665%;
+  }
+
+  .section #portfolio .grid>div.grid-item {
+    float: left;
+    width: 32%;
+    margin: 0px 0.666665% 10px;
+    color: #fec30d;
+    font-size: 23.9px;
+    text-align: center;
+    position: relative;
+    background: black;
+  }
+}
+
+@media screen and (max-width: 663px) {
+  .header>ul.nav {
+    display: none;
+    position: fixed;
+    bottom: 0px;
+    right: -100%;
+    width: 100%;
+    height: 100%;
+    background: #fec30d;
+    z-index: 9999;
+  }
+
+  .section #intro .intro1 {
+    font-weight: 900;
+    background-image: url(../img/Layer-2-copy.gif);
+    background-size: 45%;
+    background-repeat: no-repeat;
+    background-position: 95% center;
+    padding-left: 6%;
+    padding-top: 5%;
+  }
+
+  .section #aboutMe {
+    padding-top: 20px;
+    position: relative;
+    background: url(../img/wave.png) no-repeat 0px bottom;
+    background-size: auto;
+    padding-bottom: 53%;
+  }
+
+  .section #aboutMe .introduce {
+    width: 100%;
+  }
+
+  .section #aboutMe .introduce>img {
+    width: 40%;
+  }
+
+  .section #aboutMe p {
+    font-size: 15px;
+    text-align: justify;
+  }
+
+  .section #aboutMe .introduce .aligner {
+    width: 52.91666%;
+    float: right;
+    position: relative;
+  }
+
+  .section #aboutMe .la .awards {
+    font-size: 4vw;
+  }
+
+  .section #skills .skills .battery::after {
+    right: -3%;
+  }
+}
+
+@media screen and (max-width: 563px) {
+  .inner {
+    padding: 0 15px;
+  }
+
+  .section #intro {
+    padding-bottom: 3%;
+  }
+
+  .section #intro .intro1 {
+    font-weight: 900;
+    background-image: url(../img/Layer-2-copy.gif);
+    background-size: 45%;
+    background-repeat: no-repeat;
+    background-position: 95% center;
+    padding-left: 6%;
+    padding-top: 5%;
+  }
+
+  h2 {
+    font-size: 50px;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  .section #aboutMe .la .lisenses .memoList>li {
+    background-size: 100%;
+    width: 45%;
+    margin-left: 10px;
+  }
+
+  .section #aboutMe .la .lisenses .memoList>li>ul {
+    margin: 0px 0px 3% 15%;
+  }
+
+  .section #aboutMe .la .awards {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .section #aboutMe {
+    padding-bottom: 40%;
+    background-position-y: 107.5%;
+  }
+
+  .section #aboutMe .la h3 {
+    font-size: 40px;
+  }
+
+  .section #aboutMe .la .lisenses .memoList>li {
+    font-size: 30px;
+  }
+
+  .section #intro .intro1 {
+    font-size: 80px;
+  }
+
+  .section #aboutMe .la .awards .postList>li:first-child {
+    font-size: 20px;
+  }
+
+  .section #aboutMe .la .awards {
+    font-size: 4.5vw;
+  }
+
+  .section #skills .skills .battery::after {
+    right: -3.2%;
+  }
+
+  .section #portfolio .grid>div.grid-sizer {
+    width: 49%;
+    margin: 0 0.5%;
+  }
+
+  .section #portfolio .grid>div.grid-item {
+    float: left;
+    width: 49%;
+    margin: 0px 0.5% 10px;
+    color: #fec30d;
+    font-size: 23.9px;
+    text-align: center;
+    position: relative;
+    background: black;
+  }
+}
+
+@media screen and (max-width: 432px) {
+  .inner {
+    padding: 0 15px;
+  }
+
+  .section #aboutMe {
+    background: url(../img/wave.png) no-repeat 0px;
+    background-position-y: 110%;
+    background-size: auto;
+  }
+
+  .section #aboutMe .introduce {
+    text-align: center;
+  }
+
+  .section #aboutMe .introduce>img {
+    width: 70%;
+  }
+
+  .section #aboutMe .introduce .aligner {
+    margin: 5% auto;
+    width: 100%;
+    float: none;
+    position: relative;
+  }
+
+  .section #aboutMe .la h3 {
+    font-size: 30px;
+  }
+
+  .section #aboutMe .la .lisenses .memoList>li {
+    font-size: 25px;
+    padding: 35px 0px;
+  }
+
+  .section #intro .intro1 {
+    font-size: 17.5vw;
+  }
+
+  .section #aboutMe .la .awards .postList>li:first-child {
+    font-size: 4.5vw;
+  }
+
+  .section #aboutMe .la .awards {
+    font-size: 4.9vw;
+  }
+
+  .section #portfolio .grid>div.grid-item {
+    font-size: 20px;
+  }
+
+  .section #skills .skills .battery::after {
+    right: -3.5%;
+  }
+
+  .section #contactMe p {
+    font-size: 25px;
+  }
+}
